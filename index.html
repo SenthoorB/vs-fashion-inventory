@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VS Fashion Inventory</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>VS Fashion Inventory</h1>
+<div class="card">
+<input type="text" id="name" placeholder="Dress name">
+<input type="number" id="qty" placeholder="Quantity" min="0">
+<input type="file" id="img" accept="image/*">
+<button onclick="addItem()">Add Item</button>
+</div>
+<input type="text" id="search" placeholder="Search" oninput="render()">
+<div id="list"></div>
+<script src="app.js"></script>
+</body>
+</html>
