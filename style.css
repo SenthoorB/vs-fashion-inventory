@@ -1,145 +1,123 @@
-/* ===========================
-   VS Fashion ERP
-   Sprint 1
-=========================== */
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-    background:#f3f5f7;
-    padding:20px;
+
+    background:linear-gradient(135deg,#000000,#1c1c1c,#3a2f1f);
+    min-height:100vh;
+
 }
 
-.container{
-    max-width:900px;
-    margin:auto;
+.overlay{
+
+    width:100%;
+    min-height:100vh;
+    padding:30px;
+
 }
 
-h1{
+.header{
+
     text-align:center;
-    margin-bottom:20px;
-    color:#1e3a8a;
+    margin-top:20px;
+    margin-bottom:40px;
+
+}
+
+.header h1{
+
+    color:#FFD700;
+    font-size:48px;
+    letter-spacing:5px;
+
+}
+
+.header p{
+
+    color:white;
+    margin-top:10px;
+    font-size:18px;
+    font-weight:300;
+
+}
+
+.dashboard{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+
 }
 
 .card{
+
     background:white;
-    padding:20px;
-    border-radius:12px;
-    margin-bottom:20px;
-    box-shadow:0 3px 10px rgba(0,0,0,.1);
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
 }
 
-h2{
+.card:hover{
+
+    transform:translateY(-10px);
+    background:#FFD700;
+
+}
+
+.icon{
+
+    font-size:50px;
     margin-bottom:15px;
-    color:#333;
+
 }
 
-label{
-    display:block;
-    margin-top:12px;
-    margin-bottom:5px;
-    font-weight:bold;
+.card h2{
+
+    color:#222;
+    margin-bottom:10px;
+
 }
 
-input,
-select{
-    width:100%;
-    padding:10px;
-    border:1px solid #ccc;
-    border-radius:8px;
-    font-size:16px;
+.card p{
+
+    color:#666;
+
 }
 
-button{
-    width:100%;
-    margin-top:20px;
-    padding:12px;
-    background:#2563eb;
+footer{
+
+    margin-top:60px;
+    text-align:center;
     color:white;
-    border:none;
-    border-radius:8px;
-    font-size:16px;
-    cursor:pointer;
-    transition:.2s;
-}
-
-button:hover{
-    background:#1d4ed8;
-}
-
-.product-card{
-
-    background:#fafafa;
-    border:1px solid #ddd;
-    border-radius:10px;
-    padding:15px;
-    margin-top:12px;
+    font-size:14px;
 
 }
 
-.product-title{
+@media(max-width:700px){
 
-    font-size:18px;
-    font-weight:bold;
-    color:#111;
+.header h1{
 
-}
-
-.product-info{
-
-    margin-top:6px;
-    color:#555;
+font-size:34px;
 
 }
 
-.action-row{
+.dashboard{
 
-    display:flex;
-    gap:10px;
-    margin-top:10px;
+grid-template-columns:1fr;
 
 }
 
-.small-btn{
+.card{
 
-    flex:1;
-    padding:8px;
-    border:none;
-    border-radius:6px;
-    cursor:pointer;
-}
-
-.edit{
-
-    background:#22c55e;
-    color:white;
-
-}
-
-.sell{
-
-    background:#ef4444;
-    color:white;
-
-}
-
-.add{
-
-    background:#f59e0b;
-    color:white;
-
-}
-
-@media(max-width:600px){
-
-.action-row{
-
-flex-direction:column;
+padding:25px;
 
 }
 
