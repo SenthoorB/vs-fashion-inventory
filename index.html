@@ -1,22 +1,39 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>VS Fashion Inventory</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VS Fashion ERP</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>VS Fashion Inventory</h1>
-<div class="card">
-<input type="text" id="name" placeholder="Dress name">
-<input type="number" id="qty" placeholder="Quantity" min="0">
-<input type="file" id="img" accept="image/*">
-<button onclick="addItem()">Add Item</button>
-</div>
-<input type="text" id="search" placeholder="Search" oninput="render()">
-<div id="list"></div>
+<header class="header">
+  <h1>VS Fashion</h1>
+  <p>Inventory Dashboard</p>
+</header>
+
+<section class="cards">
+  <div class="card"><h2 id="products">0</h2><span>Total Products</span></div>
+  <div class="card"><h2 id="stock">0</h2><span>Total Stock</span></div>
+  <div class="card"><h2 id="low">0</h2><span>Low Stock</span></div>
+  <div class="card"><h2 id="value">₹0</h2><span>Inventory Value</span></div>
+</section>
+
+<section class="actions">
+  <button onclick="alert('Coming in Sprint 2')">➕ Add Product</button>
+  <button onclick="alert('Coming in Sprint 2')">📦 Inventory</button>
+  <button onclick="alert('Coming in Sprint 2')">📊 Reports</button>
+</section>
+
+<section class="search">
+  <input id="search" placeholder="Search products..." oninput="renderRecent()">
+</section>
+
+<section>
+  <h3>Recent Products</h3>
+  <div id="recent"></div>
+</section>
+
 <script src="app.js"></script>
 </body>
 </html>
