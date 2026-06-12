@@ -1,57 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VS Fashion ERP</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Fashion ERP</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<h1>VS Fashion ERP</h1>
-<p>Dashboard (Sprint Architecture)</p>
-</header>
 
-<nav class="menu">
-<button>Add Product</button>
-<button>Inventory</button>
-<button>Sales</button>
-<button>Reports</button>
-</nav>
+<div class="container">
 
-<section class="cards">
-<div class="card"><h2>0</h2><p>Total Products</p></div>
-<div class="card"><h2>0</h2><p>Total Pieces</p></div>
-<div class="card"><h2>0</h2><p>Low Stock</p></div>
-<div class="card"><h2>₹0</h2><p>Inventory Value</p></div>
-</section>
+    <h1>VS Fashion ERP</h1>
 
-<section>
-<h2>Product Model</h2>
-<pre>
-Product
- ├─ Photo
- ├─ Name
- ├─ Category
- └─ Variants
-      ├─ Color
-      ├─ Size
-      ├─ Purchase Price
-      ├─ Selling Price
-      └─ Quantity
-</pre>
-</section>
+    <div class="card">
 
-<section>
-<h2>Planned Variant Example</h2>
-<table>
-<tr><th>Color</th><th>Size</th><th>Qty</th></tr>
-<tr><td>Blue</td><td>S</td><td>5</td></tr>
-<tr><td>Blue</td><td>M</td><td>8</td></tr>
-<tr><td>Blue</td><td>L</td><td>3</td></tr>
-</table>
-</section>
+        <h2>Add Product</h2>
+
+        <label>Product Name</label>
+        <input type="text" id="productName">
+
+        <label>Category</label>
+        <input type="text" id="category">
+
+        <label>Color</label>
+        <input type="text" id="color">
+
+        <label>Size</label>
+
+        <select id="size">
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+            <option>Free Size</option>
+        </select>
+
+        <label>Purchase Price</label>
+        <input type="number" id="purchasePrice">
+
+        <label>Selling Price</label>
+        <input type="number" id="sellingPrice">
+
+        <label>Quantity</label>
+        <input type="number" id="quantity">
+
+        <button id="saveBtn">
+            Save Product
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Inventory</h2>
+
+        <div id="inventoryList">
+
+        </div>
+
+    </div>
+
+</div>
 
 <script src="app.js"></script>
+
 </body>
 </html>
