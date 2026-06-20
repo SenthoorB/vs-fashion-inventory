@@ -326,7 +326,8 @@ margin-bottom:10px;
 
     box-shadow:
     0 0 8px #ff8c00,
-    0 0 15px #ff8c00;
+    0 0 15px #ff8c00,
+    0 0 40px rgba(255,140,0,.5);
 
     animation:floatUp 6s linear infinite;
 
@@ -349,6 +350,21 @@ margin-bottom:10px;
 .floating-sparks span:nth-child(13){left:43%;animation-delay:1.5s;}
 .floating-sparks span:nth-child(14){left:57%;animation-delay:4.5s;}
 .floating-sparks span:nth-child(15){left:50%;animation-delay:0.5s;}
+.floating-sparks span:nth-child(16){left:42%;animation-delay:.5s;}
+.floating-sparks span:nth-child(17){left:44%;animation-delay:1.2s;}
+.floating-sparks span:nth-child(18){left:46%;animation-delay:2.7s;}
+.floating-sparks span:nth-child(19){left:48%;animation-delay:3.4s;}
+.floating-sparks span:nth-child(20){left:50%;animation-delay:1.8s;}
+.floating-sparks span:nth-child(21){left:52%;animation-delay:4.1s;}
+.floating-sparks span:nth-child(22){left:54%;animation-delay:2.2s;}
+.floating-sparks span:nth-child(23){left:56%;animation-delay:3.8s;}
+.floating-sparks span:nth-child(24){left:58%;animation-delay:1.4s;}
+.floating-sparks span:nth-child(25){left:60%;animation-delay:4.8s;}
+.floating-sparks span:nth-child(26){left:43%;animation-delay:2.1s;}
+.floating-sparks span:nth-child(27){left:47%;animation-delay:3.2s;}
+.floating-sparks span:nth-child(28){left:51%;animation-delay:.8s;}
+.floating-sparks span:nth-child(29){left:55%;animation-delay:2.9s;}
+.floating-sparks span:nth-child(30){left:59%;animation-delay:4.5s;}
 
 /* Different sizes */
 
