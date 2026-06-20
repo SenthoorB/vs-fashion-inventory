@@ -76,49 +76,62 @@ margin-top:-180px;
 }
 
 .logo{
-    font-family:'Cormorant Garamond',serif;
+
+    font-family:"Cormorant Garamond", serif !important;
+
+    font-size:170px;
+
+    font-weight:700;
+
+    line-height:.8;
+
+    letter-spacing:1px;
+
+    color:#f4d27c;
+
+    text-shadow:
+    0 0 8px rgba(212,175,55,.7),
+    0 0 20px rgba(212,175,55,.5);
+
+    animation:logoGlow 4s ease-in-out infinite;
+
+}
+
+.hero h1{
+
+    font-family:"Cormorant Garamond", serif !important;
 
     font-size:140px;
 
-    font-weight:700;
+    font-weight:600;
+
+    line-height:.9;
 
     letter-spacing:2px;
 
     color:#f4d27c;
 
     text-shadow:
-    0 0 12px rgba(212,175,55,.8),
-    0 0 30px rgba(212,175,55,.7),
-    0 0 60px rgba(212,175,55,.5);
-}
-
-.hero h1{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:110px;
-
-    font-weight:600;
-
-    letter-spacing:4px;
-
-    color:#f4d27c;
-
-    text-shadow:
-    0 0 12px rgba(212,175,55,.7),
-    0 0 30px rgba(212,175,55,.5);
+    0 0 8px rgba(212,175,55,.7),
+    0 0 20px rgba(212,175,55,.5);
 
 }
 
 .tagline{
 
-    font-size:26px;
+    font-family:"Poppins",sans-serif;
+
+    font-size:22px;
 
     font-weight:300;
 
-    letter-spacing:5px;
+    letter-spacing:8px;
 
     text-transform:uppercase;
+
+    color:#ffffff;
+
+    margin-top:15px;
 
 }
 
@@ -422,6 +435,27 @@ margin-bottom:10px;
 
         opacity:0;
 
+    }
+
+}
+@keyframes logoGlow{
+
+    0%{
+        text-shadow:
+        0 0 8px rgba(212,175,55,.7),
+        0 0 20px rgba(212,175,55,.5);
+    }
+
+    50%{
+        text-shadow:
+        0 0 15px rgba(212,175,55,.9),
+        0 0 35px rgba(212,175,55,.7);
+    }
+
+    100%{
+        text-shadow:
+        0 0 8px rgba(212,175,55,.7),
+        0 0 20px rgba(212,175,55,.5);
     }
 
 }
