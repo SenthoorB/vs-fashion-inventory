@@ -5,108 +5,122 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>VS Fashion ERP</title>
+<title>VS Fashion</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<div class="overlay">
+<div class="hero">
 
-    <div class="header">
+    <div class="overlay"></div>
+
+    <div class="floating-sparks">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="hero-content">
+
+        <div class="logo">
+            VS
+        </div>
 
         <h1>VS FASHION</h1>
 
-        <p>Style • Fashion • Trends</p>
+        <p class="tagline">
+            Elegance in Every Thread
+        </p>
 
-        <div class="welcome-box">
-
-            <h3>Welcome to VS Fashion ERP</h3>
-
-            <p>
-                Manage inventory, stock, sales and reports
-                from a single place.
-            </p>
-
-        </div>
+        <button class="enter-btn">
+            ENTER STORE →
+        </button>
 
     </div>
-
-    <div class="dashboard">
-
-        <div class="card" id="inventory">
-
-            <div class="icon">📦</div>
-
-            <h2>Inventory</h2>
-
-            <p>View all products</p>
-
-        </div>
-
-        <div class="card" onclick="window.location='add-product.html'">
-
-            <div class="icon">➕</div>
-
-            <h2>Add Product</h2>
-
-            <p>Add new dress</p>
-
-        </div>
-
-        <div class="card">
-
-            <div class="icon">🛒</div>
-
-            <h2>Sales</h2>
-
-            <p>Coming Soon</p>
-
-        </div>
-
-        <div class="card">
-
-            <div class="icon">📊</div>
-
-            <h2>Reports</h2>
-
-            <p>Coming Soon</p>
-
-        </div>
-
-        <div class="card">
-
-            <div class="icon">⚙️</div>
-
-            <h2>Settings</h2>
-
-            <p>Coming Soon</p>
-
-        </div>
-
-        <div class="card">
-
-            <div class="icon">🔥</div>
-
-            <h2>Total Products</h2>
-
-            <p id="totalProducts">0 Products</p>
-
-        </div>
-
-    </div>
-
-    <footer>
-
-        VS Fashion ERP © 2026
-
-    </footer>
 
 </div>
+
+
+<section class="dashboard">
+
+    <div class="card">
+
+        <div class="icon">📦</div>
+
+        <h3>INVENTORY</h3>
+
+        <p>View all products and stock</p>
+
+    </div>
+
+    <div class="card"
+         onclick="window.location='add-product.html'">
+
+        <div class="icon">👗</div>
+
+        <h3>ADD PRODUCT</h3>
+
+        <p>Add new dresses to inventory</p>
+
+    </div>
+
+    <div class="card">
+
+        <div class="icon">🛒</div>
+
+        <h3>SALES</h3>
+
+        <p>Manage sales and orders</p>
+
+    </div>
+
+    <div class="card">
+
+        <div class="icon">📊</div>
+
+        <h3>REPORTS</h3>
+
+        <p>View business reports</p>
+
+    </div>
+
+    <div class="card">
+
+        <div class="icon">⚙️</div>
+
+        <h3>SETTINGS</h3>
+
+        <p>Manage configuration</p>
+
+    </div>
+
+    <div class="card">
+
+        <div class="icon">❤️</div>
+
+        <h3>VS FASHION</h3>
+
+        <p>Style • Fashion • Trends</p>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h2>VS Fashion ERP © 2026</h2>
+
+    <p>Style • Fashion • Trends</p>
+
+</footer>
 
 <script src="app.js"></script>
 
