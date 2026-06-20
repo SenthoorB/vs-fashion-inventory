@@ -292,8 +292,6 @@ margin-bottom:10px;
 
 /* SPARKS */
 
-/* SPARKS */
-
 .floating-sparks{
 
     position:absolute;
@@ -304,7 +302,7 @@ margin-bottom:10px;
 
     pointer-events:none;
 
-    z-index:5;
+    z-index:15;
 
 }
 
@@ -312,107 +310,104 @@ margin-bottom:10px;
 
     position:absolute;
 
-    bottom:35%;
+    bottom:20%;
 
-    width:12px;
+    width:6px;
 
-    height:12px;
+    height:6px;
 
     border-radius:50%;
 
-    background:
-    radial-gradient(
-    circle,
-    #ffd27a,
-    #ff6b00
-    );
+    background:radial-gradient(circle,#ffd27a,#ff6b00);
 
-    opacity:.95;
+    opacity:.8;
 
     filter:blur(.5px);
 
     box-shadow:
-    0 0 10px #ff8c00,
-    0 0 20px #ff8c00,
-    0 0 35px #ff8c00;
+    0 0 8px #ff8c00,
+    0 0 15px #ff8c00;
 
-    animation:
-    floatUp 5s linear infinite;
+    animation:floatUp 6s linear infinite;
 
 }
 
-.floating-sparks span:nth-child(1){left:2%;animation-delay:0s;}
-.floating-sparks span:nth-child(2){left:5%;animation-delay:1s;}
-.floating-sparks span:nth-child(3){left:8%;animation-delay:2s;}
-.floating-sparks span:nth-child(4){left:12%;animation-delay:3s;}
-.floating-sparks span:nth-child(5){left:15%;animation-delay:4s;}
-.floating-sparks span:nth-child(6){left:18%;animation-delay:1s;}
-.floating-sparks span:nth-child(7){left:22%;animation-delay:2s;}
-.floating-sparks span:nth-child(8){left:25%;animation-delay:3s;}
-.floating-sparks span:nth-child(9){left:28%;animation-delay:4s;}
-.floating-sparks span:nth-child(10){left:32%;animation-delay:1s;}
-.floating-sparks span:nth-child(11){left:35%;animation-delay:2s;}
-.floating-sparks span:nth-child(12){left:38%;animation-delay:3s;}
-.floating-sparks span:nth-child(13){left:42%;animation-delay:4s;}
-.floating-sparks span:nth-child(14){left:45%;animation-delay:1s;}
-.floating-sparks span:nth-child(15){left:48%;animation-delay:2s;}
-.floating-sparks span:nth-child(16){left:52%;animation-delay:3s;}
-.floating-sparks span:nth-child(17){left:55%;animation-delay:4s;}
-.floating-sparks span:nth-child(18){left:58%;animation-delay:1s;}
-.floating-sparks span:nth-child(19){left:62%;animation-delay:2s;}
-.floating-sparks span:nth-child(20){left:65%;animation-delay:3s;}
-.floating-sparks span:nth-child(21){left:68%;animation-delay:4s;}
-.floating-sparks span:nth-child(22){left:72%;animation-delay:1s;}
-.floating-sparks span:nth-child(23){left:75%;animation-delay:2s;}
-.floating-sparks span:nth-child(24){left:78%;animation-delay:3s;}
-.floating-sparks span:nth-child(25){left:82%;animation-delay:4s;}
-.floating-sparks span:nth-child(26){left:85%;animation-delay:1s;}
-.floating-sparks span:nth-child(27){left:88%;animation-delay:2s;}
-.floating-sparks span:nth-child(28){left:92%;animation-delay:3s;}
-.floating-sparks span:nth-child(29){left:95%;animation-delay:4s;}
-.floating-sparks span:nth-child(30){left:98%;animation-delay:1s;}
+/* Random positions */
+
+.floating-sparks span:nth-child(1){left:44%;animation-delay:0s;}
+.floating-sparks span:nth-child(2){left:46%;animation-delay:1s;}
+.floating-sparks span:nth-child(3){left:48%;animation-delay:2s;}
+.floating-sparks span:nth-child(4){left:50%;animation-delay:3s;}
+.floating-sparks span:nth-child(5){left:52%;animation-delay:1.5s;}
+.floating-sparks span:nth-child(6){left:54%;animation-delay:2.5s;}
+.floating-sparks span:nth-child(7){left:45%;animation-delay:4s;}
+.floating-sparks span:nth-child(8){left:49%;animation-delay:1s;}
+.floating-sparks span:nth-child(9){left:53%;animation-delay:3s;}
+.floating-sparks span:nth-child(10){left:47%;animation-delay:2s;}
+.floating-sparks span:nth-child(11){left:51%;animation-delay:5s;}
+.floating-sparks span:nth-child(12){left:55%;animation-delay:2.5s;}
+.floating-sparks span:nth-child(13){left:43%;animation-delay:1.5s;}
+.floating-sparks span:nth-child(14){left:57%;animation-delay:4.5s;}
+.floating-sparks span:nth-child(15){left:50%;animation-delay:0.5s;}
+
+/* Different sizes */
+
+.floating-sparks span:nth-child(3n){
+    width:3px;
+    height:3px;
+}
+
+.floating-sparks span:nth-child(4n){
+    width:8px;
+    height:8px;
+}
+
+.floating-sparks span:nth-child(5n){
+    width:5px;
+    height:5px;
+}
+
+/* Different brightness */
+
+.floating-sparks span:nth-child(2n){
+    opacity:.5;
+}
+
+.floating-sparks span:nth-child(3n){
+    opacity:.9;
+}
+
+/* Natural floating */
 
 @keyframes floatUp{
 
     0%{
 
         transform:
+        translateX(0)
         translateY(0)
         scale(1);
-
-        opacity:1;
-
-    }
-
-    50%{
-
-        opacity:.8;
-
-    }
-
-    100%{
-
-        transform:
-        translateY(-900px)
-        scale(.3);
 
         opacity:0;
 
     }
 
-}
+    10%{
+        opacity:1;
+    }
 
-@keyframes floatUp{
+    100%{
 
-0%{
-transform:translateY(0);
-opacity:1;
-}
+        transform:
+        translateX(
+        calc((var(--random,1) * 40px))
+        )
+        translateY(-700px)
+        scale(.2);
 
-100%{
-transform:translateY(-900px);
-opacity:0;
-}
+        opacity:0;
+
+    }
 
 }
 
