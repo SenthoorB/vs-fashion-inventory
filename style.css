@@ -35,9 +35,9 @@ rgba(0,0,0,.45)
 ),
 url('campfire-bg.png');
 
-background-size:contain;
+background-size:110%;
 
-background-position:center top;
+background-position:center center;
 
 background-repeat:no-repeat;
 
